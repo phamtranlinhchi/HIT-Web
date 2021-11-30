@@ -1,0 +1,76 @@
+body{
+    background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    font-family: "Red Hat Display", sans-serif;
+}
+.container{
+    max-width: 420px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+.pic{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+.text{
+    padding: 0px 60px;
+    text-align: center;
+    opacity: 0.3;
+}
+.package{
+    background-color: #f8f9fd;
+    margin: 0px 50px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.package1{
+    font-weight: bold;
+    display: flex;
+}
+.packagename{
+    height: 40px;
+    margin: 10px 0px 0px 20px;
+}
+span{
+    opacity: 0.3;
+    font-weight: normal;
+}
+a{
+    display: flex;
+    align-items: center;
+}
+.submit{
+    text-align: center;
+    padding: 10px 50px;
+    background-color: #372be1;
+    margin: 30px 50px 20px 50px;
+    border-radius: 8px;
+    color: #e2dcfd;
+    font-weight: bold;
+    box-shadow: 0px 15px #c8bcfd1a;
+}
+.submit:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.cancel{
+    text-align: center;
+    opacity: 0.3;
+    font-weight: bold;
+}
+.cancel:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
