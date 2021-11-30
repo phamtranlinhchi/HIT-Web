@@ -1,17 +1,19 @@
 
 function perfect(string){
-    string=string.trim().toLowerCase().split(''); 
-    for(let i=0; i<string.length; i++){
-        if(string[i]===string[i+1] && string[i]===' '){ 
-            string.splice(i, 1);
-            --i;  
-        }
-        if(Number(string[i])){ 
-            string.splice(i, 1);
-            --i;  
-        }
-    }
-    string=string.join('').split(' ').map(function(char) {
+    // for(let i=0; i<string.length; i++){
+    //     if(string[i]===string[i+1] && string[i]===' '){ 
+    //         string.splice(i, 1);
+    //         --i;  
+    //     }
+    //     if(Number(string[i])){ 
+    //         string.splice(i, 1);
+    //         --i;  
+    //     }
+    // }
+    // string=string.join('').split(' ').map(function(char) {
+    //     return char.replace(char.charAt(0), char.charAt(0).toUpperCase());
+    // }).join(' ');
+    string=string.toLowerCase().match(/[a-zA-Z]+/g).map((char) => {
         return char.replace(char.charAt(0), char.charAt(0).toUpperCase());
     }).join(' ');
     return string;
