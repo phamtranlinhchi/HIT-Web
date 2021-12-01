@@ -13,10 +13,9 @@ function perfect(string){
     // string=string.join('').split(' ').map(function(char) {
     //     return char.replace(char.charAt(0), char.charAt(0).toUpperCase());
     // }).join(' ');
-    string=string.toLowerCase().match(/[a-zA-Z]+/g).map((char) => {
+    return string.toLowerCase().match(/[a-zA-Z]+/g).map((char) => {
         return char.replace(char.charAt(0), char.charAt(0).toUpperCase());
     }).join(' ');
-    return string;
 }
 
 
